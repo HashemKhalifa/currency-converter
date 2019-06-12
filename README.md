@@ -1,7 +1,13 @@
 <h1 align="center">
+
+</br>
   	<img height="50" src="public/currency.png" alt="Currnecy Converter" /> <br> Currnecy Converter
 </h1>
 
+<p align="center">
+    <img alt="dependencies" title="dependencies" src="https://img.shields.io/david/hashemkhalifa/currency-converter.svg" >
+   <img alt="dependencies" title="dependencies" src="https://img.shields.io/github/last-commit/hashemkhalifa/currency-converter.svg" >
+</p>
 
 <p align="center">
   <b>Get Updated currency rate</b></br>
