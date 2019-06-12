@@ -33,6 +33,8 @@
 * `npm start`
 * For testing `npm run test`
 
+## Build
+* `npm run build`
 
 ## Contributions
 
