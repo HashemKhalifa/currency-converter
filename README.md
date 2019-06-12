@@ -1,6 +1,4 @@
 <h1 align="center">
-
-</br>
   	<img height="50" src="public/currency.png" alt="Currnecy Converter" /> <br> Currnecy Converter
 </h1>
 
@@ -13,7 +11,6 @@
   <b>Get Updated currency rate</b></br>
   </br>
   <b>✨ React and redux app using <a href="https://www.currencyconverterapi.com/">Currency converter API</a> ✨<b>
-  </br>
   </br>
   
   <img src="public/currency-gif.gif" alt="Currnecy Converter" />
