@@ -36,8 +36,10 @@
 ## Build
 * `npm run build`
 
-## Contributions
+## Technologies 
+* 
 
+## Contributions
 * Spread the word
 * Open pull requests
 
