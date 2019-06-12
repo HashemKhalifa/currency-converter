@@ -4,17 +4,21 @@
 
 
 <p align="center">
-  <b>Get Updated currency rate</b></br>
-  <sub>✨ React and redux app using <a href="https://www.currencyconverterapi.com/">Currency converter API</a> ✨<sub>
+  <b>Get Updated currency rate</b></br></br>
+  <b>✨ React and redux app using <a href="https://www.currencyconverterapi.com/">Currency converter API</a> ✨<b>
+  </br>
   </br>
   
-  <img src="public/currency-gif.gif" alt="Currnecy Converter" /> 
+  <img src="public/currency-gif.gif" alt="Currnecy Converter" />
+  </br> 
 </p>
 
 <p align="center">
-  <br><b>Currency Converter</b> is a react application using latest web techonlogeis<br>
- 
-   <sub>💥Using redux and react creat app 💥</sub>
+  <br><b>Currency Converter</b> 
+  <br>
+  <br>
+  is a react application using latest web techonlogeis<br>
+   <b>💥Using redux and react creat app 💥</b>
 </p>
 
 
