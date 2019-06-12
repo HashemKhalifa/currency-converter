@@ -42,8 +42,12 @@
 ## Build
 * `npm run build`
 
-## Technologies 
-* 
+## Technologies
+* React 
+* Redux
+* Axios
+* Styled component
+
 
 ## Contributions
 * Spread the word
