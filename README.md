@@ -9,10 +9,9 @@
 
 <p align="center">
   <b>Get Updated currency rate</b></br>
-  </br>
   <b>✨ React and redux app using <a href="https://www.currencyconverterapi.com/">Currency converter API</a> ✨<b>
   </br>
-  
+ 
   <img src="public/currency-gif.gif" alt="Currnecy Converter" />
   </br> 
 </p>
