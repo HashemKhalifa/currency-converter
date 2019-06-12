@@ -16,9 +16,8 @@
 <p align="center">
   <br><b>Currency Converter</b> 
   <br>
-  <br>
-  is a react application using latest web techonlogeis<br>
-   <b>💥Using redux and react creat app 💥</b>
+  IS a react application using latest web technologies<br>
+   <b>💥React, redux, create react app 💥</b>
 </p>
 
 
@@ -27,7 +26,7 @@
 ## Installation
 
 * Clone  `git@github.com:HashemKhalifa/currency-converter.git`
-* run `npm install` 
+* Run `npm install` 
 * Create a API key from <a href="https://www.currencyconverterapi.com/"> Currency converter API </a>
 * Add your key to the `.env` file using `REACT_APP_API_SECERET` variable
 * `npm start`
