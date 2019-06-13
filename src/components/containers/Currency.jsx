@@ -1,5 +1,7 @@
 import React, { Fragment, useEffect } from "react";
 import { connect } from "react-redux";
+import switchIco from "./switch.svg";
+
 import {
   GlobalStyle,
   AppWrapper,
@@ -7,7 +9,8 @@ import {
   CurrencyConverter,
   CurrencyInfo,
   Input,
-  Loading
+  Loading,
+  Image
 } from "../styles";
 
 import { Select } from "../Select";
@@ -17,7 +20,8 @@ import {
   fromChangeInput,
   toChangeInput,
   fromCurrencyChange,
-  toCurrencyChange
+  toCurrencyChange,
+  handleSwitch
 } from "../../store/actions/currencyActions";
 
 import currencyExchangeList from "../../consts/CurrencyCodes";
@@ -34,9 +38,9 @@ function Currency({
   fromCurrencyChange,
   toChangeInput,
   toCurrencyChange,
+  handleSwitch,
   getRate
 }) {
-
   useEffect(() => {
     getRate(convertFrom, convertTo);
   }, []);
@@ -50,8 +54,21 @@ function Currency({
       {isFetched && (
         <AppWrapper>
           <CurrencyInfo>
-            <p>{displayCurrency({currencyList, currencyId: convertFrom, number: from})} equals</p>
-            <h4>{displayCurrency({currencyList, currencyId: convertTo, number: to})}</h4>
+            <p>
+              {displayCurrency({
+                currencyList,
+                currencyId: convertFrom,
+                number: from
+              })}{" "}
+              equals{" "}
+            </p>
+            <h4>
+              {displayCurrency({
+                currencyList,
+                currencyId: convertTo,
+                number: to
+              })}
+            </h4>
           </CurrencyInfo>
 
           <CurrencyConverter>
@@ -67,7 +84,12 @@ function Currency({
               currencyList={currencyList}
             />
           </CurrencyConverter>
-
+          <Image
+              onClick={handleSwitch}
+              width="50"
+              src={switchIco}
+              alt="Switch"
+          />
           <CurrencyConverter>
             <Input
               type="number"
@@ -99,6 +121,7 @@ const mapStateToProps = ({ currency }) => ({
   fromChangeInput: currency.fromChangeInput,
   fromCurrencyChange: currency.fromCurrencyChange,
   toCurrencyChange: currency.toCurrencyChange,
+  handleSwitch: currency.handleSwitch,
   getRate: currency.getRate
 });
 
@@ -117,6 +140,9 @@ const mapDispatchToProps = dispatch => ({
   },
   toCurrencyChange: payload => {
     dispatch(toCurrencyChange(payload));
+  },
+  handleSwitch: payload => {
+    dispatch(handleSwitch(payload));
   }
 });
 

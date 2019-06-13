@@ -2,7 +2,7 @@
   "name": "currency-exchange",
   "version": "0.1.0",
   "description": "Currency converter using currencyconverterapi.com API along with React and redux",
-  "author":"Hashem Khalifa <hashem.khalifa@gmail.com>",
+  "author": "Hashem Khalifa <hashem.khalifa@gmail.com>",
   "keywords": [
     "Currency",
     "Converter",

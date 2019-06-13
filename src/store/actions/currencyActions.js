@@ -5,7 +5,8 @@ import {
   FROM_CHANGE_INPUT,
   TO_CHANGE_INPUT,
   FROM_CURRENCY_CHANGE,
-  TO_CURRENCY_CHANGE
+  TO_CURRENCY_CHANGE,
+  SWITCH_BETWEEN
 } from "./types";
 
 /**
@@ -17,6 +18,11 @@ const handleError = payload => ({
   type: HANDEL_ERROR,
   payload
 });
+
+export const handleSwitch = payload => ({
+  type: SWITCH_BETWEEN,
+  payload
+})
 
 /**
  *
@@ -69,24 +75,26 @@ export const toChangeInput = payload => {
  * @returns {Function}
  */
 export const fromCurrencyChange = payload => (dispatch, getState) => {
-  getRateRequest(payload, getState().currency.convertTo).then(res => {
-    dispatch({
-      type: FETCH_CURRENCY,
-      payload: res.data
-    });
+  getRateRequest(payload, getState().currency.convertTo)
+    .then(res => {
+      dispatch({
+        type: FETCH_CURRENCY,
+        payload: res.data
+      });
 
-    dispatch({
-      type: FROM_CURRENCY_CHANGE,
-      payload: payload
-    });
+      dispatch({
+        type: FROM_CURRENCY_CHANGE,
+        payload: payload
+      });
 
-    dispatch({
-      type: FROM_CHANGE_INPUT,
-      payload: getState().currency.from
+      dispatch({
+        type: FROM_CHANGE_INPUT,
+        payload: getState().currency.from
+      });
+    })
+    .catch(error => {
+      dispatch(handleError(error));
     });
-  }).catch(error => {
-    dispatch(handleError(error));
-  });
 };
 
 /**

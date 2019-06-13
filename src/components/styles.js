@@ -28,6 +28,7 @@ export const AppWrapper = styled.div`
   margin: 3rem auto 0 auto;
   border-radius: 8px;
   padding: 0.75rem 1rem;
+  position: relative;
 `;
 
 export const CurrencyInfo = styled.div`
@@ -52,13 +53,21 @@ export const CurrencyConverter = styled.div`
   justify-content: center;
 `;
 
+export const Image = styled.img`
+  position: absolute;
+  left: 44%;
+  top: 56%;
+  transform: translate(-50%, -40%);
+  cursor: pointer;
+`;
+
 export const Input = styled.input`
   width: 14rem;
   padding: 0.7em;
   border: 1px solid #dbe2e8;
   color: #2e3d49;
   max-width: 50rem;
-  margin-right: 1.5rem;
+  margin-right: 2.5rem;
   outline: none;
   height: 3rem;
   font-size: 0.9rem;
