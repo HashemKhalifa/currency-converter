@@ -18,13 +18,12 @@ export default function(state, { type, payload }) {
         isFetched: true
       };
     case SWITCH_BETWEEN:
-      console.log('switch paylaod', payload)
-      console.log('switch state', state)
       return {
         ...state,
         to: state.from,
         from: state.to,
-
+        convertTo: state.convertFrom,
+        convertFrom: state.convertTo,
       };
     case HANDEL_ERROR:
       return {
