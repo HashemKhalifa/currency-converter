@@ -20,7 +20,7 @@
     "redux": "4.0.4",
     "redux-thunk": "2.3.0",
     "styled-components": "4.3.1",
-    "snyk": "^1.222.1"
+    "snyk": "1.236.1"
   },
   "scripts": {
     "start": "react-scripts start",
